@@ -1,0 +1,94 @@
+{
+  "name": "Bad",
+  "description": "its just a simple userbot source based on telethon",
+  "logo": "https://telegra.ph/file/25e1625bbdd34c20dc8f5.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/bad4/d",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "give your name",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "give your APP_ID get it from : my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "give your API_HASH get it from : my.telegram.org",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "give your STRING_SESSION",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_USERNAME": {
+      "description": "give your bot username without @",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "give your bot token",
+      "value": ""
+    },
+    "COMMAND_HAND_LER": {
+      "description": "don't change this !",
+      "value": ".",
+      "required": false
+    },
+    "ENV": {
+      "description": "don't change this !",
+      "value": "ANYTHING",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "give your HEROKU_API_KEY get it from : https://dashboard.heroku.com/account",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "give your HEROKU_APP_NAME",
+      "value": ""
+    },
+    "DEFAULT_BIO": {
+      "description": "give your bio",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "give your timezone get it from : http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Asia/Baghdad",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "don't change this !",
+      "value": "BAD",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
